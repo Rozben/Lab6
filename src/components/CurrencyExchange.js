@@ -42,10 +42,12 @@ class CurrencyExchange extends Component {
 		
 		if(c1A.value <= 0){
 			document.getElementById('validText').textContent = "Кількість має бути позитивним числом";
+			c2A.value = '';
 			return;
 		}
 		else if(isNaN(c1A.value)){
 			document.getElementById('validText').textContent = "Кількість має бути числом";
+			c2A.value = '';
 			return;
 		}
 		
